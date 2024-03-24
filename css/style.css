@@ -197,15 +197,6 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.project-bio {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-  top: 160px;
-  left: 10px;
-}
-
 /* Services */
 #services {
   display: flex;
@@ -249,6 +240,8 @@ body {
   top: 160px;
   left: 10px;
 }
+
+
 
 /* Footer */
 #footer {
