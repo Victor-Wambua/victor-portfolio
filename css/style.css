@@ -1251,7 +1251,12 @@ footer.site-footer {
 
   main { margin-bottom: 70px; }
 
-  .main-content { position: relative; width: max-content; margin: auto; }
+  .main-content {
+    position: relative;
+    width: max-content;
+    margin: auto;
+    padding-top: 68px;
+  }
 
   .navbar {
     position: absolute;
@@ -1270,7 +1275,7 @@ footer.site-footer {
 
   .navbar-list {
     gap: 28px;
-    padding: 24px 20px 0;
+    padding: 12px 20px;
   }
 
   .navbar-link { font-weight: var(--fw-600); }
