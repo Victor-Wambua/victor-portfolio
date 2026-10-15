@@ -196,9 +196,9 @@
           </p>
           <p>
             Alongside this I lead Salesforce and NRCF's core information systems, work closely with
-            programme teams, leadership and external partners, and translate organisational needs into
-            practical technology. I am strongest in stakeholder collaboration, project delivery and
-            clear reporting.
+            programme teams, leadership and an external development partner, and translate
+            organisational needs into practical technology. I am strongest in stakeholder
+            collaboration, project delivery and clear reporting.
           </p>
 
           <ul class="facts">
@@ -453,80 +453,167 @@
         <header class="page-header">
           <h2 class="page-title" id="title-projects" tabindex="-1">Projects</h2>
           <p class="lead">
-            Selected work across nonprofit technology, information systems and independent software
-            engineering, described by the problem, the technology and the outcome.
+            Selected systems and projects across nonprofit technology, information systems and
+            independent software engineering, described by the problem, the technology and the outcome.
           </p>
         </header>
 
-        <ul class="card-grid">
+        <section class="section" aria-labelledby="featured-title">
+          <div class="section__head">
+            <h3 class="section__title" id="featured-title">Featured systems</h3>
+          </div>
 
-          <li class="sv-card project">
-            <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
-            <h3 class="sv-card__title">Portal 2.0</h3>
-            <p class="sv-card__text">A digital transformation initiative designed to create a more relationship-focused and student-centred experience for sponsors and supporters.</p>
-            <dl class="project__facts">
-              <div><dt>Problem</dt><dd>Sponsor and supporter interactions needed a more personal, relationship-focused digital experience.</dd></div>
-              <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag">Web platform</li><li class="sv-tag">Systems integration</li></ul></dd></div>
-              <div><dt>Impact</dt><dd>A more relationship-focused, student-centred experience for sponsors and supporters.</dd></div>
-            </dl>
-          </li>
+          <ul class="stack">
 
-          <li class="sv-card project">
-            <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
-            <h3 class="sv-card__title">Fundraising and donation technology</h3>
-            <p class="sv-card__text">Digital systems supporting online sponsorship and donation, connecting payment and donor-management platforms.</p>
-            <dl class="project__facts">
-              <div><dt>Problem</dt><dd>Sponsorship and donation processes needed stronger, better-connected digital infrastructure.</dd></div>
-              <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag">Online sponsorship and donations</li><li class="sv-tag">Payment and donor-management integration</li></ul></dd></div>
-              <div><dt>Impact</dt><dd>Built and improved technology supporting nonprofit fundraising.</dd></div>
-            </dl>
-          </li>
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF · In progress</p>
+              <h4 class="sv-card__title">Portal 2.0</h4>
+              <p class="sv-card__text">A digital transformation initiative designed to create a more relationship-focused and student-centred experience for sponsors and supporters.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Sponsors and supporters needed a more personal, relationship-focused digital experience.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag">HTML and CSS</li><li class="sv-tag">JavaScript</li><li class="sv-tag">Design system</li><li class="sv-tag">Salesforce</li></ul></dd></div>
+                <div><dt>Scope</dt><dd>A working UI prototype and a design system, with documentation under way for the vision, role-based experiences for sponsors, donors, patrons, alumni, board members and correspondents, information architecture, Salesforce integration, accessibility and notifications.</dd></div>
+                <div><dt>Status</dt><dd>In progress. The prototype uses placeholder data.</dd></div>
+              </dl>
+            </li>
 
-          <li class="sv-card project">
-            <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
-            <h3 class="sv-card__title">Information systems and Salesforce</h3>
-            <p class="sv-card__text">Core information systems supporting student, programme, sponsorship and organisational data.</p>
-            <dl class="project__facts">
-              <div><dt>Problem</dt><dd>Student, programme and sponsorship data needed consistent management, automation and reporting.</dd></div>
-              <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Salesforce</li><li class="sv-tag">Workflow automation</li><li class="sv-tag">Reporting</li></ul></dd></div>
-              <div><dt>Impact</dt><dd>Stronger data management, workflow automation and reporting to support decision-making.</dd></div>
-            </dl>
-          </li>
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
+              <h4 class="sv-card__title">Sponsor and donation platform</h4>
+              <p class="sv-card__text">A Laravel web application that lets donors give online by themselves and keeps payment, sponsor and student records connected across Stripe, Salesforce and the NRCF website. It is developed with an external development partner, and NRCF's developers contribute through a separate sandbox.</p>
 
-          <li class="sv-card project">
-            <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
-            <h3 class="sv-card__title">Digital growth and online visibility</h3>
-            <p class="sv-card__text">Organic SEO, Google Ads and social media work to grow organisational visibility.</p>
-            <dl class="project__facts">
-              <div><dt>Problem</dt><dd>The organisation's programmes needed greater online visibility and audience reach.</dd></div>
-              <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag">Organic SEO</li><li class="sv-tag">Google Ads</li><li class="sv-tag">Social media</li></ul></dd></div>
-              <div><dt>Impact</dt><dd>Significantly grew the organisation's digital presence and engagement.</dd></div>
-            </dl>
-          </li>
+              <div class="flow" role="group" aria-label="How the sponsor portal connects to other systems">
+                <div class="flow__core">
+                  <p class="flow__name">Sponsor portal</p>
+                  <p class="flow__note">Laravel application</p>
+                </div>
+                <ul class="flow__links">
+                  <li><span class="flow__name">Stripe</span><span class="flow__note">Donations and payments</span></li>
+                  <li><span class="flow__name">Salesforce</span><span class="flow__note">Contact and student records, read and updated</span></li>
+                  <li><span class="flow__name">NRCF website (WordPress)</span><span class="flow__note">Student status updated from the portal</span></li>
+                </ul>
+              </div>
 
-          <li class="sv-card project">
-            <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
-            <h3 class="sv-card__title">STEM and technology education programming</h3>
-            <p class="sv-card__text">Technology-based learning for children spanning robotics, space exploration and virtual reality.</p>
-            <dl class="project__facts">
-              <div><dt>Problem</dt><dd>Children needed greater access to hands-on technology and STEM learning.</dd></div>
-              <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag">Robotics</li><li class="sv-tag">Space exploration through technology</li><li class="sv-tag">Virtual reality</li></ul></dd></div>
-              <div><dt>Impact</dt><dd>Strengthened technology education for children.</dd></div>
-            </dl>
-          </li>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Donors needed to give online by themselves, and the resulting records had to stay in step with Salesforce and the website.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Laravel</li><li class="sv-tag sv-tag--code">Stripe</li><li class="sv-tag sv-tag--code">Salesforce</li><li class="sv-tag sv-tag--code">WordPress</li></ul></dd></div>
+                <div><dt>Impact</dt><dd>Donors can give online by themselves, and records stay connected across payment, donor-management and website systems. Sandbox and staging environments use Stripe test mode, a Salesforce sandbox and redirected email, so testing never reaches real donors.</dd></div>
+              </dl>
+            </li>
 
-          <li class="sv-card project">
-            <p class="sv-card__meta">Freelance Software Engineer</p>
-            <h3 class="sv-card__title">Web-based solutions</h3>
-            <p class="sv-card__text">Independent design and development of web-based solutions for a range of operational needs.</p>
-            <dl class="project__facts">
-              <div><dt>Problem</dt><dd>Operational needs and ideas had to be translated into practical digital products.</dd></div>
-              <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">PHP</li><li class="sv-tag sv-tag--code">Laravel</li><li class="sv-tag sv-tag--code">JavaScript</li><li class="sv-tag sv-tag--code">WordPress</li><li class="sv-tag sv-tag--code">MySQL</li></ul></dd></div>
-              <div><dt>Impact</dt><dd>Practical, working digital products delivered for clients.</dd></div>
-            </dl>
-          </li>
+            <li class="sv-card project">
+              <p class="sv-card__meta">Independent product · Version 0.1.0, pre-pilot</p>
+              <h4 class="sv-card__title">Approval Portal</h4>
+              <p class="sv-card__text">A payment request and approval application for Google Workspace, built on Google Apps Script. It replaces form-based approval workflows with a role-based dashboard, a durable processing queue and an audit trail.</p>
 
-        </ul>
+              <ul class="shots">
+                <li>
+                  <figure>
+                    <a class="sv-media sv-media--16x10" href="assets/images/projects/approval-portal-review.webp" target="_blank" rel="noopener">
+                      <img src="assets/images/projects/approval-portal-review.webp" alt="Request review screen with a budget check, request details, documents and an approve, reject or send-back decision." width="1440" height="900" loading="lazy" />
+                      <span class="visually-hidden">(opens full size in a new tab)</span>
+                    </a>
+                    <figcaption class="sv-caption">Review: budget check, documents and the decision form.</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <a class="sv-media sv-media--16x10" href="assets/images/projects/approval-portal-overview.webp" target="_blank" rel="noopener">
+                      <img src="assets/images/projects/approval-portal-overview.webp" alt="Approval Portal overview for an approver, showing request counts, totals and requests waiting for a decision." width="1440" height="900" loading="lazy" />
+                      <span class="visually-hidden">(opens full size in a new tab)</span>
+                    </a>
+                    <figcaption class="sv-caption">Overview: counts, totals and requests waiting for a decision.</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <a class="sv-media sv-media--16x10" href="assets/images/projects/approval-portal-reports.webp" target="_blank" rel="noopener">
+                      <img src="assets/images/projects/approval-portal-reports.webp" alt="Management report with request counts, totals and breakdowns by department and status." width="1440" height="900" loading="lazy" />
+                      <span class="visually-hidden">(opens full size in a new tab)</span>
+                    </a>
+                    <figcaption class="sv-caption">Reports: totals and breakdowns for management.</figcaption>
+                  </figure>
+                </li>
+              </ul>
+              <p class="sv-caption shots__note">Screens come from a local preview that uses fictitious data only.</p>
+
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Payment approvals needed clear roles, a reliable processing queue and a trustworthy audit trail.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Google Apps Script</li><li class="sv-tag sv-tag--code">JavaScript</li><li class="sv-tag">Google Workspace</li><li class="sv-tag">Automated tests</li></ul></dd></div>
+                <div><dt>Design</dt><dd>Six roles (staff, approver, finance, auditor, management and administrator), with server-side permission checks on every read and action, and an audit log protected by a hash chain.</dd></div>
+                <div><dt>Status</dt><dd>Version 0.1.0, pre-pilot. The server code, dashboard and documentation are complete, and automated tests pass against simulated Google services. Testing on a live Workspace installation is the next step.</dd></div>
+              </dl>
+            </li>
+
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="more-title">
+          <div class="section__head">
+            <h3 class="section__title" id="more-title">More projects</h3>
+          </div>
+
+          <ul class="card-grid">
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
+              <h4 class="sv-card__title">Information systems and Salesforce</h4>
+              <p class="sv-card__text">Core information systems supporting student, programme, sponsorship and organisational data, delivered as a version-controlled Salesforce project.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Student, programme and sponsorship data needed consistent management, automation and reporting.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Salesforce</li><li class="sv-tag sv-tag--code">Salesforce DX</li><li class="sv-tag sv-tag--code">GitHub Actions</li><li class="sv-tag">Workflow automation</li><li class="sv-tag">Reporting</li></ul></dd></div>
+                <div><dt>Delivery</dt><dd>Changes go through pull requests, are validated against Salesforce before merging, and deploy to a sandbox automatically.</dd></div>
+                <div><dt>Recent work</dt><dd>Sponsor bulk email and unsubscribe handling, donor and sponsor field visibility, student grade fields, and correspondence history.</dd></div>
+                <div><dt>Impact</dt><dd>Stronger data management, workflow automation and reporting to support decision-making.</dd></div>
+              </dl>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
+              <h4 class="sv-card__title">Website and release process</h4>
+              <p class="sv-card__text">The NRCF WordPress website runs through three environments (sandbox, staging and production) with a documented hand-off between NRCF's developers and an external development partner.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Two teams needed to change one website without overwriting each other's work.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">WordPress</li><li class="sv-tag sv-tag--code">Git</li><li class="sv-tag sv-tag--code">GitLab CI</li><li class="sv-tag sv-tag--code">GitHub</li></ul></dd></div>
+                <div><dt>Impact</dt><dd>Each branch has one owner and pull requests are the hand-off, so every change is reviewed before it reaches the live site.</dd></div>
+              </dl>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
+              <h4 class="sv-card__title">Digital growth and online visibility</h4>
+              <p class="sv-card__text">Organic SEO, Google Ads and social media work to grow organisational visibility.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>The organisation's programmes needed greater online visibility and audience reach.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag">Organic SEO</li><li class="sv-tag">Google Ads</li><li class="sv-tag">Social media</li></ul></dd></div>
+                <div><dt>Impact</dt><dd>Significantly grew the organisation's digital presence and engagement.</dd></div>
+              </dl>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
+              <h4 class="sv-card__title">STEM and technology education programming</h4>
+              <p class="sv-card__text">Technology-based learning for children spanning robotics, space exploration and virtual reality.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Children needed greater access to hands-on technology and STEM learning.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag">Robotics</li><li class="sv-tag">Space exploration through technology</li><li class="sv-tag">Virtual reality</li></ul></dd></div>
+                <div><dt>Impact</dt><dd>Strengthened technology education for children.</dd></div>
+              </dl>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Freelance Software Engineer</p>
+              <h4 class="sv-card__title">Web-based solutions</h4>
+              <p class="sv-card__text">Independent design and development of web-based solutions for a range of operational needs, including a WordPress website for a school, delivered with a handover guide and documentation.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Operational needs and ideas had to be translated into practical digital products.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">PHP</li><li class="sv-tag sv-tag--code">Laravel</li><li class="sv-tag sv-tag--code">JavaScript</li><li class="sv-tag sv-tag--code">WordPress</li><li class="sv-tag sv-tag--code">MySQL</li></ul></dd></div>
+                <div><dt>Impact</dt><dd>Practical, working digital products delivered for clients.</dd></div>
+              </dl>
+            </li>
+
+          </ul>
+        </section>
       </article>
 
 
@@ -541,7 +628,7 @@
           <li class="sv-card skill-card">
             <h3 class="sv-card__title">Technology leadership</h3>
             <ul class="tag-list">
-              <li class="sv-tag">Technology strategy</li><li class="sv-tag">Digital transformation</li><li class="sv-tag">IT operations</li><li class="sv-tag">Systems management</li><li class="sv-tag">Cybersecurity</li>
+              <li class="sv-tag">Technology strategy</li><li class="sv-tag">Digital transformation</li><li class="sv-tag">IT operations</li><li class="sv-tag">Systems management</li><li class="sv-tag">Cybersecurity</li><li class="sv-tag">Release management</li>
             </ul>
           </li>
           <li class="sv-card skill-card">
@@ -553,7 +640,7 @@
           <li class="sv-card skill-card">
             <h3 class="sv-card__title">Data and platforms</h3>
             <ul class="tag-list">
-              <li class="sv-tag">Salesforce</li><li class="sv-tag">Information systems</li><li class="sv-tag">Reporting</li><li class="sv-tag">Workflow automation</li>
+              <li class="sv-tag">Salesforce</li><li class="sv-tag sv-tag--code">Salesforce DX</li><li class="sv-tag">Information systems</li><li class="sv-tag">Reporting</li><li class="sv-tag">Workflow automation</li><li class="sv-tag">Stripe integration</li>
             </ul>
           </li>
           <li class="sv-card skill-card">
@@ -565,7 +652,13 @@
           <li class="sv-card skill-card">
             <h3 class="sv-card__title">Development</h3>
             <ul class="tag-list">
-              <li class="sv-tag sv-tag--code">PHP</li><li class="sv-tag sv-tag--code">Laravel</li><li class="sv-tag sv-tag--code">JavaScript</li><li class="sv-tag sv-tag--code">WordPress</li><li class="sv-tag sv-tag--code">MySQL</li>
+              <li class="sv-tag sv-tag--code">PHP</li><li class="sv-tag sv-tag--code">Laravel</li><li class="sv-tag sv-tag--code">JavaScript</li><li class="sv-tag sv-tag--code">WordPress</li><li class="sv-tag sv-tag--code">MySQL</li><li class="sv-tag sv-tag--code">Google Apps Script</li><li class="sv-tag sv-tag--code">Git and CI</li>
+            </ul>
+          </li>
+          <li class="sv-card skill-card">
+            <h3 class="sv-card__title">Product and design</h3>
+            <ul class="tag-list">
+              <li class="sv-tag">Design systems</li><li class="sv-tag">UX documentation</li><li class="sv-tag">Accessibility</li><li class="sv-tag">Responsive design</li>
             </ul>
           </li>
           <li class="sv-card skill-card">
