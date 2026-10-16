@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary -->
@@ -10,6 +9,7 @@
   <meta name="title" content="Victor Wambua | Technology, Education &amp; Digital Transformation Leader" />
   <meta name="description" content="Victor Wambua is a technology, education and digital transformation leader in Nairobi, Kenya, working at the intersection of technology, STEM education and nonprofit impact." />
   <meta name="author" content="Victor Wambua" />
+  <meta name="theme-color" content="#14213D" />
   <link rel="canonical" href="https://victor-wambua.github.io/victor-portfolio/" />
 
   <!-- Open Graph -->
@@ -17,30 +17,35 @@
   <meta property="og:url" content="https://victor-wambua.github.io/victor-portfolio/" />
   <meta property="og:title" content="Victor Wambua | Technology, Education &amp; Digital Transformation Leader" />
   <meta property="og:description" content="Technology, education and digital transformation leader working at the intersection of technology, STEM education and nonprofit impact in Nairobi, Kenya." />
-  <meta property="og:image" content="https://victor-wambua.github.io/victor-portfolio/assets/images/profile/profile-image.png" />
+  <meta property="og:image" content="https://victor-wambua.github.io/victor-portfolio/assets/images/logos/sir-victor-avatar-1024.png" />
+  <meta property="og:image:alt" content="Sir Victor monogram: an interlocking S and V" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Victor Wambua | Technology, Education &amp; Digital Transformation Leader" />
   <meta name="twitter:description" content="Technology, education and digital transformation leader working at the intersection of technology, STEM education and nonprofit impact." />
-  <meta name="twitter:image" content="https://victor-wambua.github.io/victor-portfolio/assets/images/profile/profile-image.png" />
+  <meta name="twitter:image" content="https://victor-wambua.github.io/victor-portfolio/assets/images/logos/sir-victor-avatar-1024.png" />
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <!-- Icons -->
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
-  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="assets/favicon/site.webmanifest" />
-  <meta name="theme-color" content="#122642" />
 
-  <!-- Styles -->
+  <!-- Fonts are self-hosted; preload the two used above the fold -->
+  <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <noscript>
+    <style>
+      .menu-btn { display: none; }
+      .site-nav { position: static; padding: 0 var(--margin-page) var(--space-4); }
+    </style>
+  </noscript>
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -48,6 +53,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Victor Wambua",
+    "alternateName": "Sir Victor",
     "jobTitle": "Technology, Education & Digital Transformation Leader",
     "url": "https://victor-wambua.github.io/victor-portfolio/",
     "image": "https://victor-wambua.github.io/victor-portfolio/assets/images/profile/profile-image.png",
@@ -66,222 +72,163 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- icon sprite (no external icon dependency) -->
-  <svg style="display:none" aria-hidden="true">
-    <defs>
-      <g id="icon-defs" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></g>
-    </defs>
-    <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="m22 6-10 7L2 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="icon-map-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
-    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="7 10 12 15 17 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-    <symbol id="icon-chevron-down" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="icon-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="9" y="9" width="6" height="6" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="9" y1="1" x2="9" y2="4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="15" y1="1" x2="15" y2="4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="9" y1="20" x2="9" y2="23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="15" y1="20" x2="15" y2="23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="20" y1="9" x2="23" y2="9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="20" y1="14" x2="23" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="1" y1="9" x2="4" y2="9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="1" y1="14" x2="4" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-    <symbol id="icon-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
-    <symbol id="icon-trending-up" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="17 6 23 6 23 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.8"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
-    <symbol id="icon-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="3.3 7 12 12 20.7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="22" x2="12" y2="12" stroke="currentColor" stroke-width="1.8"/></symbol>
-    <symbol id="icon-graduation-cap" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 10.5v4c0 1.4 2.7 3 6 3s6-1.6 6-3v-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="22" y1="8" x2="22" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-    <symbol id="icon-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-    <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
-    <symbol id="icon-server" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="2" y="14" width="20" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="6" y1="6" x2="6.01" y2="6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="6" y1="18" x2="6.01" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-    <symbol id="icon-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
-    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
-    <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 13.4 7 22l5-3 5 3-1.2-8.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="icon-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><polyline points="2 17 12 22 22 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="2 12 12 17 22 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="icon-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="8 6 2 12 8 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="icon-send" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><polygon points="22 2 15 22 11 13 2 9 22 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
-    <symbol id="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <!-- icon sprite: the only icons on the site, used sparingly -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="icon-menu" viewBox="0 0 24 24"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16 9"/></symbol>
+    <symbol id="icon-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="7" x2="12" y2="13"/><line x1="12" y1="16.5" x2="12.01" y2="16.5"/></symbol>
   </svg>
 
-  <main>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header__bar">
+      <a class="brand" href="#about" data-route="about">
+        <img src="assets/images/logos/sir-victor-primary.svg" alt="Sir Victor, home page" width="121" height="36" />
+      </a>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg class="icon icon-open" aria-hidden="true"><use href="#icon-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#icon-close"/></svg>
+      </button>
 
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="assets/images/profile/profile-image.png" alt="Portrait of Victor Wambua" width="120" height="120" />
-        </figure>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about" data-route="about" aria-current="page">About</a></li>
+          <li><a href="#experience" data-route="experience">Experience</a></li>
+          <li><a href="#impact" data-route="impact">Impact</a></li>
+          <li><a href="#projects" data-route="projects">Projects</a></li>
+          <li><a href="#skills" data-route="skills">Skills</a></li>
+          <li><a href="#contact" data-route="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="info-content">
-          <h1 class="name">Victor Wambua</h1>
-          <p class="title">Technology, Education &amp; Digital Transformation Leader</p>
+  <div class="layout">
+
+    <!-- PROFILE -->
+    <aside class="profile on-dark" aria-label="Profile">
+      <div class="profile__top">
+        <div class="profile__photo">
+          <img src="assets/images/profile/profile-image.png" alt="Portrait of Victor Wambua" width="300" height="200" />
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn aria-expanded="false">
-          <span>Show Contacts</span>
-          <svg class="chev-only" width="14" height="14" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
-        </button>
+        <div>
+          <h1 class="profile__name">Victor Wambua</h1>
+          <p class="profile__role">Technology leader in education and nonprofit work</p>
+        </div>
       </div>
 
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
+      <button class="sv-btn sv-btn--secondary profile__toggle" type="button" aria-expanded="false" aria-controls="profile-details">
+        <span>Contact details</span>
+        <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+      </button>
 
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box"><svg width="18" height="18" aria-hidden="true"><use href="#icon-mail"/></svg></div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:victorwambua004@gmail.com" class="contact-link">victorwambua004@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box"><svg width="18" height="18" aria-hidden="true"><use href="#icon-map-pin"/></svg></div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Nairobi, Kenya</address>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box"><svg width="18" height="18" aria-hidden="true"><use href="#icon-briefcase"/></svg></div>
-            <div class="contact-info">
-              <p class="contact-title">LinkedIn</p>
-              <a href="https://www.linkedin.com/in/victor-wambua" class="contact-link" target="_blank" rel="noopener">victor-wambua</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box"><svg width="18" height="18" aria-hidden="true"><use href="#icon-download"/></svg></div>
-            <div class="contact-info">
-              <p class="contact-title">Resume</p>
-              <a href="assets/cv/Victor-Wambua-CV.pdf" class="contact-link" download>Download CV</a>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/victor-wambua" class="social-link" target="_blank" rel="noopener" aria-label="Victor Wambua on LinkedIn">
-              <img src="assets/linkedin-icon.svg" alt="" width="16" height="16" />
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://github.com/Victor-Wambua" class="social-link" target="_blank" rel="noopener" aria-label="Victor Wambua on GitHub">
-              <img src="assets/github-icon.svg" alt="" width="16" height="16" />
-            </a>
-          </li>
-        </ul>
+      <div class="profile__details" id="profile-details">
+        <dl class="contact-list">
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:victorwambua004@gmail.com">victorwambua004@gmail.com</a></dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Nairobi, Kenya</dd>
+          </div>
+          <div>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/victor-wambua" target="_blank" rel="noopener">linkedin.com/in/victor-wambua<span class="visually-hidden"> (opens in a new tab)</span></a></dd>
+          </div>
+          <div>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/Victor-Wambua" target="_blank" rel="noopener">github.com/Victor-Wambua<span class="visually-hidden"> (opens in a new tab)</span></a></dd>
+          </div>
+          <div>
+            <dt>Resume</dt>
+            <dd><a href="assets/cv/Victor-Wambua-CV.pdf" download>Download CV (PDF)<svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg></a></dd>
+          </div>
+        </dl>
       </div>
     </aside>
 
 
-    <div class="main-content" id="main-content">
-
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list" role="tablist" aria-label="Portfolio sections">
-          <li class="navbar-item" role="presentation">
-            <button class="navbar-link active" role="tab" id="tab-about" aria-controls="page-about" aria-selected="true" data-nav-link="about">About</button>
-          </li>
-          <li class="navbar-item" role="presentation">
-            <button class="navbar-link" role="tab" id="tab-experience" aria-controls="page-experience" aria-selected="false" data-nav-link="experience">Experience</button>
-          </li>
-          <li class="navbar-item" role="presentation">
-            <button class="navbar-link" role="tab" id="tab-impact" aria-controls="page-impact" aria-selected="false" data-nav-link="impact">Impact</button>
-          </li>
-          <li class="navbar-item" role="presentation">
-            <button class="navbar-link" role="tab" id="tab-projects" aria-controls="page-projects" aria-selected="false" data-nav-link="projects">Projects</button>
-          </li>
-          <li class="navbar-item" role="presentation">
-            <button class="navbar-link" role="tab" id="tab-skills" aria-controls="page-skills" aria-selected="false" data-nav-link="skills">Skills</button>
-          </li>
-          <li class="navbar-item" role="presentation">
-            <button class="navbar-link" role="tab" id="tab-contact" aria-controls="page-contact" aria-selected="false" data-nav-link="contact">Contact</button>
-          </li>
-        </ul>
-      </nav>
-
+    <main class="content" id="main-content" tabindex="-1">
 
       <!-- ABOUT -->
-      <article class="about active" data-page="about" id="page-about" role="tabpanel" aria-labelledby="tab-about" tabindex="0">
-
-        <header class="hero-header">
-          <p class="eyebrow">Technology + STEM Education + Nonprofit Impact</p>
-          <h2 class="h2 article-title">Technology, Education &amp; Digital Transformation Leader</h2>
-          <p class="hero-statement">
-            I use technology to strengthen education, nonprofit organisations and digital programmes —
-            connecting people, systems and ideas to create meaningful impact.
+      <article class="page is-active" data-page="about" aria-labelledby="title-about">
+        <header class="page-header">
+          <p class="eyebrow">Technology, STEM education and nonprofit impact</p>
+          <h2 class="page-title" id="title-about" tabindex="-1">Technology, Education &amp; Digital Transformation Leader</h2>
+          <p class="lead">
+            I use technology to strengthen education, nonprofit organisations and digital programmes.
+            My work connects people, systems and ideas, and I judge it by how well it serves the
+            programmes and children behind it.
           </p>
-
-          <div class="hero-cta">
-            <button class="btn btn-primary" data-cta-nav="projects">View My Work</button>
-            <a class="btn btn-outline" href="assets/cv/Victor-Wambua-CV.pdf" download>
-              <svg width="16" height="16" aria-hidden="true"><use href="#icon-download"/></svg>
+          <div class="cta-row">
+            <a class="sv-btn" href="#projects" data-route="projects">View my work</a>
+            <a class="sv-btn sv-btn--secondary" href="assets/cv/Victor-Wambua-CV.pdf" download>
               Download CV
+              <svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg>
             </a>
-            <button class="btn btn-outline" data-cta-nav="contact">Let's Connect</button>
+            <a class="sv-link sv-link--arrow" href="#contact" data-route="contact">Get in touch<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
           </div>
         </header>
 
-        <section class="about-text">
-          <h3 class="h3" style="margin-bottom:14px;">About Me</h3>
+        <section class="section prose" aria-labelledby="about-me">
+          <div class="section__head">
+            <h3 class="section__title" id="about-me">About me</h3>
+          </div>
           <p>
-            I'm a technology and nonprofit leader based in Nairobi, Kenya, working at the intersection of
-            technology, education and community impact. Over more than six years I've progressed from IT
+            I am a technology and nonprofit leader based in Nairobi, Kenya, working where technology,
+            education and community impact meet. Over more than six years I have progressed from IT
             Assistant to IT &amp; Systems Manager at Ngong Road Children's Foundation (NRCF), a child- and
-            education-focused nonprofit — taking on increasing strategic and organisational responsibility
-            along the way.
+            education-focused nonprofit, taking on more strategic and organisational responsibility at
+            each step.
           </p>
           <p>
-            My work spans strengthening children's access to STEM learning through robotics, technology-based
-            space exploration and virtual reality; building and improving the technology behind nonprofit
-            fundraising, including online sponsorship and donor systems; and growing NRCF's digital presence
-            through organic SEO, Google Ads and social media.
+            The work spans strengthening children's access to STEM learning through robotics,
+            technology-based space exploration and virtual reality; building and improving the
+            technology behind nonprofit fundraising, including online sponsorship and donation systems;
+            and growing the foundation's digital presence through organic SEO, Google Ads and social
+            media.
           </p>
           <p>
-            Alongside this, I lead Salesforce and our core information systems, work closely with programme
-            teams, leadership and external partners, and translate organisational needs into practical
-            technology solutions — with a particular strength in stakeholder collaboration, project delivery
-            and clear reporting.
+            Alongside this I lead Salesforce and NRCF's core information systems, work closely with
+            programme teams, leadership and an external development partner, and translate
+            organisational needs into practical technology. I am strongest in stakeholder
+            collaboration, project delivery and clear reporting.
           </p>
+
+          <ul class="facts">
+            <li class="fact"><p class="fact__num">6+</p><p class="fact__label">Years in technology and nonprofit leadership</p></li>
+            <li class="fact"><p class="fact__num">3</p><p class="fact__label">Roles at NRCF, from IT Assistant to IT &amp; Systems Manager</p></li>
+            <li class="fact"><p class="fact__num">2020</p><p class="fact__label">Joined Ngong Road Children's Foundation</p></li>
+            <li class="fact"><p class="fact__num">2024</p><p class="fact__label">Began freelance software engineering</p></li>
+          </ul>
         </section>
 
-        <div class="stat-row">
-          <div class="stat-card"><p class="stat-num">6+</p><p class="stat-label">Years in technology &amp; nonprofit leadership</p></div>
-          <div class="stat-card"><p class="stat-num">3</p><p class="stat-label">Roles progressed through at NRCF</p></div>
-          <div class="stat-card"><p class="stat-num">2020</p><p class="stat-label">Career began in technology</p></div>
-          <div class="stat-card"><p class="stat-num">2024</p><p class="stat-label">Freelance software engineering began</p></div>
-        </div>
-
-        <section class="service">
-          <h3 class="h3 service-title">What I Focus On</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="icon-box"><svg width="22" height="22" aria-hidden="true"><use href="#icon-cpu"/></svg></div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Technology &amp; Digital Transformation</h4>
-                <p class="service-item-text">Leading technology strategy, information systems and digital transformation for a child- and education-focused nonprofit.</p>
-              </div>
+        <section class="section" aria-labelledby="focus-title">
+          <div class="section__head">
+            <h3 class="section__title" id="focus-title">Areas of focus</h3>
+          </div>
+          <ul class="focus-list">
+            <li class="focus-item">
+              <h4>Technology and digital transformation</h4>
+              <p>Leading technology strategy, information systems and digital transformation for a child- and education-focused nonprofit.</p>
             </li>
-
-            <li class="service-item">
-              <div class="icon-box"><svg width="22" height="22" aria-hidden="true"><use href="#icon-zap"/></svg></div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">STEM &amp; Technology Education</h4>
-                <p class="service-item-text">Strengthening children's access to technology-based learning through robotics, space exploration and virtual reality.</p>
-              </div>
+            <li class="focus-item">
+              <h4>STEM and technology education</h4>
+              <p>Strengthening children's access to technology-based learning through robotics, space exploration and virtual reality.</p>
             </li>
-
-            <li class="service-item">
-              <div class="icon-box"><svg width="22" height="22" aria-hidden="true"><use href="#icon-heart"/></svg></div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Nonprofit Fundraising Technology</h4>
-                <p class="service-item-text">Building and improving digital systems supporting online sponsorship, donation and donor management.</p>
-              </div>
+            <li class="focus-item">
+              <h4>Nonprofit fundraising technology</h4>
+              <p>Building and improving the digital systems behind online sponsorship, donations and donor management.</p>
             </li>
-
-            <li class="service-item">
-              <div class="icon-box"><svg width="22" height="22" aria-hidden="true"><use href="#icon-trending-up"/></svg></div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Digital Growth &amp; Communications</h4>
-                <p class="service-item-text">Growing organisational visibility and engagement through organic SEO, Google Ads and social media.</p>
-              </div>
+            <li class="focus-item">
+              <h4>Digital growth and communications</h4>
+              <p>Growing organisational visibility and engagement through organic SEO, Google Ads and social media.</p>
             </li>
           </ul>
         </section>
@@ -289,58 +236,55 @@
 
 
       <!-- EXPERIENCE -->
-      <article class="experience" data-page="experience" id="page-experience" role="tabpanel" aria-labelledby="tab-experience" tabindex="0">
-        <header>
-          <h2 class="h2 article-title">Experience</h2>
-          <p class="section-lede">
-            Six years progressing from IT Assistant to IT &amp; Systems Manager at a child- and
-            education-focused nonprofit, alongside independent software engineering work.
+      <article class="page" data-page="experience" aria-labelledby="title-experience">
+        <header class="page-header">
+          <h2 class="page-title" id="title-experience" tabindex="-1">Experience</h2>
+          <p class="lead">
+            Six years at one organisation, in three roles of increasing responsibility, alongside
+            independent software engineering work.
           </p>
         </header>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box"><svg width="22" height="22" aria-hidden="true"><use href="#icon-briefcase"/></svg></div>
-            <div>
-              <h3 class="h3">Career Progression</h3>
-              <p>Ngong Road Children's Foundation (NRCF)</p>
-            </div>
+        <section class="section" aria-labelledby="career-title">
+          <div class="section__head">
+            <h3 class="section__title" id="career-title">Career progression</h3>
+            <p class="section__intro">Ngong Road Children's Foundation (NRCF), Nairobi, Kenya</p>
           </div>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <div class="timeline-item-head">
-                <h4 class="h4 timeline-item-title">IT &amp; Systems Manager</h4>
-                <span class="timeline-badge">Current</span>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <div class="timeline__head">
+                <h4 class="timeline__title">IT &amp; Systems Manager</h4>
+                <span class="sv-badge">Current</span>
               </div>
-              <span class="timeline-date">June 2023 — Present · Nairobi, Kenya</span>
-              <ul class="timeline-text-list">
+              <p class="timeline__meta">June 2023 – Present</p>
+              <ul class="bullets">
                 <li>Lead technology strategy, digital transformation and systems management, aligning technology priorities with programme and organisational objectives.</li>
                 <li>Strengthened technology education for children through STEM programming covering robotics, space exploration through technology and virtual reality.</li>
                 <li>Lead Salesforce and core information systems supporting student, programme, sponsorship and organisational data, including workflow automation and reporting.</li>
-                <li>Built and improved technology supporting nonprofit fundraising, including online sponsorship/donation systems and payment–donor-management integrations.</li>
+                <li>Built and improved technology supporting nonprofit fundraising, including online sponsorship and donation systems and integrations connecting payment and donor-management platforms.</li>
                 <li>Significantly grew the organisation's digital presence through organic SEO, Google Ads and social media.</li>
               </ul>
             </li>
 
-            <li class="timeline-item">
-              <div class="timeline-item-head">
-                <h4 class="h4 timeline-item-title">ICT Coordinator</h4>
+            <li class="timeline__item">
+              <div class="timeline__head">
+                <h4 class="timeline__title">ICT Coordinator</h4>
               </div>
-              <span class="timeline-date">January 2022 — June 2023 · Nairobi, Kenya</span>
-              <ul class="timeline-text-list">
+              <p class="timeline__meta">January 2022 – June 2023</p>
+              <ul class="bullets">
                 <li>Coordinated technology initiatives that enabled staff and programme teams to achieve operational priorities and organisational objectives.</li>
                 <li>Supported information systems, digital tools, reporting, user adoption and technology operations across the organisation.</li>
                 <li>Worked across teams to identify technology needs, evaluate solutions and coordinate implementation.</li>
               </ul>
             </li>
 
-            <li class="timeline-item">
-              <div class="timeline-item-head">
-                <h4 class="h4 timeline-item-title">Information Technology Assistant</h4>
+            <li class="timeline__item">
+              <div class="timeline__head">
+                <h4 class="timeline__title">Information Technology Assistant</h4>
               </div>
-              <span class="timeline-date">February 2020 — January 2022 · Nairobi, Kenya</span>
-              <ul class="timeline-text-list">
+              <p class="timeline__meta">February 2020 – January 2022</p>
+              <ul class="bullets">
                 <li>Provided technology support to staff and programme teams, including hardware, software, connectivity and user assistance.</li>
                 <li>Prepared reports, tracked technology assets, evaluated new technologies and supported vendor coordination.</li>
                 <li>Maintained computer systems and technology infrastructure while helping users adopt digital tools.</li>
@@ -349,123 +293,137 @@
           </ol>
         </section>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box"><svg width="22" height="22" aria-hidden="true"><use href="#icon-code"/></svg></div>
-            <div>
-              <h3 class="h3">Independent Practice</h3>
-            </div>
+        <section class="section" aria-labelledby="independent-title">
+          <div class="section__head">
+            <h3 class="section__title" id="independent-title">Independent practice</h3>
           </div>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <div class="timeline-item-head">
-                <h4 class="h4 timeline-item-title">Freelance Software Engineer</h4>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <div class="timeline__head">
+                <h4 class="timeline__title">Freelance Software Engineer</h4>
               </div>
-              <span class="timeline-date">January 2024 — Present · Nairobi, Kenya</span>
-              <p class="timeline-text">Design and develop web-based solutions, translating operational needs and ideas into practical digital products.</p>
+              <p class="timeline__meta">January 2024 – Present · Nairobi, Kenya</p>
+              <p class="timeline__text">Design and develop web-based solutions, translating operational needs and ideas into practical digital products.</p>
             </li>
           </ol>
         </section>
 
-        <section class="timeline" style="margin-bottom:10px;">
-          <div class="title-wrapper">
-            <div class="icon-box"><svg width="22" height="22" aria-hidden="true"><use href="#icon-book"/></svg></div>
-            <div>
-              <h3 class="h3">Education</h3>
-            </div>
+        <section class="section" aria-labelledby="education-title">
+          <div class="section__head">
+            <h3 class="section__title" id="education-title">Education</h3>
           </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Bachelor's Degree, Mathematics and Computer Science</h4>
-              <span class="timeline-date">Kenyatta University · 2015 — 2019</span>
+          <ul class="ledger">
+            <li>
+              <p class="ledger__date">2015 – 2019</p>
+              <div>
+                <h4>Bachelor's degree, Mathematics and Computer Science</h4>
+                <p class="ledger__detail">Kenyatta University</p>
+              </div>
             </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Certificate, Computer Packages</h4>
-              <span class="timeline-date">Belmont International College · 2015</span>
+            <li>
+              <p class="ledger__date">2015</p>
+              <div>
+                <h4>Certificate, Computer Packages</h4>
+                <p class="ledger__detail">Belmont International College</p>
+              </div>
             </li>
-          </ol>
+          </ul>
+        </section>
 
-          <h3 class="h3" style="margin:30px 0 4px;">Certifications &amp; Training</h3>
-          <ul class="cert-list">
-            <li class="cert-item"><svg width="18" height="18" aria-hidden="true" style="color:var(--gold-600);flex-shrink:0;"><use href="#icon-award"/></svg><p>Microsoft Excel 2020 – VBA &amp; Macros</p></li>
-            <li class="cert-item"><svg width="18" height="18" aria-hidden="true" style="color:var(--gold-600);flex-shrink:0;"><use href="#icon-award"/></svg><p>Data Analysis &amp; Reporting</p></li>
-            <li class="cert-item"><svg width="18" height="18" aria-hidden="true" style="color:var(--gold-600);flex-shrink:0;"><use href="#icon-award"/></svg><p>Digital Marketing Foundations</p></li>
-            <li class="cert-item"><svg width="18" height="18" aria-hidden="true" style="color:var(--gold-600);flex-shrink:0;"><use href="#icon-award"/></svg><p>Digital Advertising for Nonprofits</p></li>
+        <section class="section" aria-labelledby="training-title">
+          <div class="section__head">
+            <h3 class="section__title" id="training-title">Certifications and training</h3>
+          </div>
+          <ul class="ledger ledger--plain">
+            <li>Microsoft Excel 2020: VBA and Macros</li>
+            <li>Data Analysis and Reporting</li>
+            <li>Digital Marketing Foundations</li>
+            <li>Digital Advertising for Nonprofits</li>
           </ul>
         </section>
       </article>
 
 
       <!-- IMPACT -->
-      <article class="impact" data-page="impact" id="page-impact" role="tabpanel" aria-labelledby="tab-impact" tabindex="0">
-        <header>
-          <h2 class="h2 article-title">Impact</h2>
-          <p class="section-lede">
-            Selected highlights from leading technology, STEM education and digital growth at Ngong Road
+      <article class="page" data-page="impact" aria-labelledby="title-impact">
+        <header class="page-header">
+          <h2 class="page-title" id="title-impact" tabindex="-1">Impact</h2>
+          <p class="lead">
+            Selected work from leading technology, STEM education and digital growth at Ngong Road
             Children's Foundation.
           </p>
         </header>
 
-        <div class="impact-grid">
-          <div class="impact-card">
-            <div class="icon-box"><svg aria-hidden="true"><use href="#icon-zap"/></svg></div>
-            <h4 class="h4">STEM &amp; Technology Education</h4>
-            <p>Strengthened technology education for children through STEM programming spanning robotics, space exploration through technology, virtual reality and other emerging technologies.</p>
-          </div>
+        <section class="section" aria-label="Featured impact">
+          <ul class="card-grid">
+            <li class="sv-card">
+              <p class="sv-card__meta">01</p>
+              <h3 class="sv-card__title">STEM and technology education</h3>
+              <p class="sv-card__text">Strengthened technology education for children through STEM programming spanning robotics, space exploration through technology, virtual reality and other emerging technologies.</p>
+            </li>
+            <li class="sv-card">
+              <p class="sv-card__meta">02</p>
+              <h3 class="sv-card__title">Fundraising technology</h3>
+              <p class="sv-card__text">Built and improved digital systems supporting nonprofit fundraising, including online sponsorship and donation systems and integrations connecting payment and donor-management platforms.</p>
+            </li>
+            <li class="sv-card">
+              <p class="sv-card__meta">03</p>
+              <h3 class="sv-card__title">Digital growth</h3>
+              <p class="sv-card__text">Significantly grew the organisation's digital presence through organic SEO, Google Ads and social media, strengthening visibility and audience reach.</p>
+            </li>
+            <li class="sv-card">
+              <p class="sv-card__meta">04</p>
+              <h3 class="sv-card__title">Technology and digital transformation</h3>
+              <p class="sv-card__text">Lead technology strategy, information systems and digital transformation initiatives within a child- and education-focused nonprofit.</p>
+            </li>
+          </ul>
+        </section>
 
-          <div class="impact-card">
-            <div class="icon-box"><svg aria-hidden="true"><use href="#icon-heart"/></svg></div>
-            <h4 class="h4">Fundraising Technology</h4>
-            <p>Built and improved digital systems supporting nonprofit fundraising, including online sponsorship and donation systems and integrations connecting payment and donor-management platforms.</p>
-          </div>
-
-          <div class="impact-card">
-            <div class="icon-box"><svg aria-hidden="true"><use href="#icon-trending-up"/></svg></div>
-            <h4 class="h4">Digital Growth</h4>
-            <p>Significantly grew the organisation's digital presence through organic SEO, Google Ads and social media, strengthening visibility and audience reach.</p>
-          </div>
-
-          <div class="impact-card">
-            <div class="icon-box"><svg aria-hidden="true"><use href="#icon-cpu"/></svg></div>
-            <h4 class="h4">Technology &amp; Digital Transformation</h4>
-            <p>Lead technology strategy, information systems and digital transformation initiatives within a child- and education-focused nonprofit.</p>
-          </div>
-        </div>
-
-        <section class="impact-subsection">
-          <div class="impact-subsection-head">
-            <p class="eyebrow">A Key Differentiator</p>
-            <h3 class="h3">STEM &amp; Technology Education</h3>
-            <p class="section-lede">
-              Beyond systems and software, much of my technology work goes directly toward strengthening
-              children's access to hands-on technology education.
+        <section class="section" aria-labelledby="stem-title">
+          <div class="section__head">
+            <p class="eyebrow">Key differentiator</p>
+            <h3 class="section__title" id="stem-title">STEM and technology education</h3>
+            <p class="section__intro">
+              Beyond systems and software, much of this work goes directly to strengthening children's
+              access to hands-on technology education.
             </p>
           </div>
 
-          <div class="chip-grid">
-            <div class="chip-card"><svg width="20" height="20" style="color:var(--gold-600);" aria-hidden="true"><use href="#icon-zap"/></svg><p>Robotics</p></div>
-            <div class="chip-card"><svg width="20" height="20" style="color:var(--gold-600);" aria-hidden="true"><use href="#icon-globe"/></svg><p>Space Exploration through Technology</p></div>
-            <div class="chip-card"><svg width="20" height="20" style="color:var(--gold-600);" aria-hidden="true"><use href="#icon-box"/></svg><p>Virtual Reality</p></div>
-            <div class="chip-card"><svg width="20" height="20" style="color:var(--gold-600);" aria-hidden="true"><use href="#icon-graduation-cap"/></svg><p>STEM Programming</p></div>
-            <div class="chip-card"><svg width="20" height="20" style="color:var(--gold-600);" aria-hidden="true"><use href="#icon-book"/></svg><p>Technology Education</p></div>
-            <div class="chip-card"><svg width="20" height="20" style="color:var(--gold-600);" aria-hidden="true"><use href="#icon-users"/></svg><p>Youth-Focused Technology</p></div>
-          </div>
+          <ul class="area-list">
+            <li>Robotics</li>
+            <li>Space exploration through technology</li>
+            <li>Virtual reality</li>
+            <li>STEM programming</li>
+            <li>Technology education</li>
+            <li>Youth-focused technology</li>
+          </ul>
 
-          <div class="media-note">
-            <div class="icon-box"><svg width="20" height="20" aria-hidden="true"><use href="#icon-camera"/></svg></div>
-            <p>Photos from NRCF's STEM programmes will be added here. This space is reserved for authentic
-              programme imagery rather than stock photography.</p>
-          </div>
+          <!--
+            PHOTOGRAPHY (add when you have authentic images of NRCF's STEM programmes)
+            1. Save approved photos to assets/images/stem/ (landscape, around 1600px wide).
+            2. Uncomment the block below and update src, alt and caption.
+            Use real programme photos only. Describe what the image shows in the alt text.
+
+            <ul class="card-grid">
+              <li>
+                <figure>
+                  <div class="sv-media sv-media--4x3">
+                    <img src="assets/images/stem/robotics.jpg" alt="Describe the photo here" loading="lazy" width="1600" height="1200" />
+                  </div>
+                  <figcaption class="sv-caption">Short caption.</figcaption>
+                </figure>
+              </li>
+            </ul>
+          -->
         </section>
 
-        <section class="impact-subsection">
-          <div class="impact-subsection-head">
-            <h3 class="h3">Information Systems &amp; Salesforce</h3>
-            <p class="section-lede">I lead and optimise Salesforce and related information systems supporting organisational and programme outcomes.</p>
+        <section class="section" aria-labelledby="systems-title">
+          <div class="section__head">
+            <h3 class="section__title" id="systems-title">Information systems and Salesforce</h3>
+            <p class="section__intro">I lead and optimise Salesforce and related information systems supporting organisational and programme outcomes.</p>
           </div>
-          <ul class="bullet-list">
+          <ul class="bullets">
             <li>Student and programme data</li>
             <li>Sponsorship and donor management</li>
             <li>Reporting and data management</li>
@@ -474,12 +432,12 @@
           </ul>
         </section>
 
-        <section class="impact-subsection" style="margin-bottom:10px;">
-          <div class="impact-subsection-head">
-            <h3 class="h3">Digital Growth &amp; Communications</h3>
-            <p class="section-lede">Using digital platforms to expand organisational visibility and engagement.</p>
+        <section class="section" aria-labelledby="digital-title">
+          <div class="section__head">
+            <h3 class="section__title" id="digital-title">Digital growth and communications</h3>
+            <p class="section__intro">Using digital platforms to expand organisational visibility and engagement.</p>
           </div>
-          <ul class="bullet-list">
+          <ul class="bullets">
             <li>Organic SEO</li>
             <li>Google Ads</li>
             <li>Social media</li>
@@ -491,234 +449,331 @@
 
 
       <!-- PROJECTS -->
-      <article class="projects" data-page="projects" id="page-projects" role="tabpanel" aria-labelledby="tab-projects" tabindex="0">
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-          <p class="section-lede">
-            Selected work spanning nonprofit technology, information systems and independent software
-            engineering — framed around the problem, the technology and the outcome.
+      <article class="page" data-page="projects" aria-labelledby="title-projects">
+        <header class="page-header">
+          <h2 class="page-title" id="title-projects" tabindex="-1">Projects</h2>
+          <p class="lead">
+            Selected systems and projects across nonprofit technology, information systems and
+            independent software engineering, described by the problem, the technology and the outcome.
           </p>
         </header>
 
-        <ul class="project-list">
+        <section class="section" aria-labelledby="featured-title">
+          <div class="section__head">
+            <h3 class="section__title" id="featured-title">Featured systems</h3>
+          </div>
 
-          <li class="project-card">
-            <div class="project-card-head">
-              <div class="icon-box"><svg aria-hidden="true"><use href="#icon-layers"/></svg></div>
-              <div>
-                <h3 class="h4 project-title">Portal 2.0</h3>
-                <p class="project-role">Technology Lead</p>
+          <ul class="stack">
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF · In progress</p>
+              <h4 class="sv-card__title">Portal 2.0</h4>
+              <p class="sv-card__text">A digital transformation initiative designed to create a more relationship-focused and student-centred experience for sponsors and supporters.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Sponsors and supporters needed a more personal, relationship-focused digital experience.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag">HTML and CSS</li><li class="sv-tag">JavaScript</li><li class="sv-tag">Design system</li><li class="sv-tag">Salesforce</li></ul></dd></div>
+                <div><dt>Scope</dt><dd>A working UI prototype and a design system, with documentation under way for the vision, role-based experiences for sponsors, donors, patrons, alumni, board members and correspondents, information architecture, Salesforce integration, accessibility and notifications.</dd></div>
+                <div><dt>Status</dt><dd>In progress. The prototype uses placeholder data.</dd></div>
+              </dl>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
+              <h4 class="sv-card__title">Sponsor and donation platform</h4>
+              <p class="sv-card__text">A Laravel web application that lets donors give online by themselves and keeps payment, sponsor and student records connected across Stripe, Salesforce and the NRCF website. It is developed with an external development partner, and NRCF's developers contribute through a separate sandbox.</p>
+
+              <div class="flow" role="group" aria-label="How the sponsor portal connects to other systems">
+                <div class="flow__core">
+                  <p class="flow__name">Sponsor portal</p>
+                  <p class="flow__note">Laravel application</p>
+                </div>
+                <ul class="flow__links">
+                  <li><span class="flow__name">Stripe</span><span class="flow__note">Donations and payments</span></li>
+                  <li><span class="flow__name">Salesforce</span><span class="flow__note">Contact and student records, read and updated</span></li>
+                  <li><span class="flow__name">NRCF website (WordPress)</span><span class="flow__note">Student status updated from the portal</span></li>
+                </ul>
               </div>
-            </div>
-            <p class="project-summary">Digital transformation initiative designed to create a more relationship-focused and student-centred experience for sponsors and supporters.</p>
-            <div class="project-meta">
-              <div class="project-meta-block"><h5>Problem</h5><p>Sponsor and supporter interactions needed a more personal, relationship-focused digital experience.</p></div>
-              <div class="project-meta-block"><h5>Technology</h5><div class="tag-row"><span class="tag">Web platform</span><span class="tag">Systems integration</span></div></div>
-              <div class="project-meta-block"><h5>Impact</h5><p>A more relationship-focused, student-centred experience for sponsors and supporters.</p></div>
-            </div>
-          </li>
 
-          <li class="project-card">
-            <div class="project-card-head">
-              <div class="icon-box"><svg aria-hidden="true"><use href="#icon-heart"/></svg></div>
-              <div>
-                <h3 class="h4 project-title">Nonprofit Fundraising &amp; Donation Technology</h3>
-                <p class="project-role">Technology Lead</p>
-              </div>
-            </div>
-            <p class="project-summary">Digital systems supporting online sponsorship and donation, connecting payment and donor-management platforms.</p>
-            <div class="project-meta">
-              <div class="project-meta-block"><h5>Problem</h5><p>Sponsorship and donation processes needed stronger, better-connected digital infrastructure.</p></div>
-              <div class="project-meta-block"><h5>Technology</h5><div class="tag-row"><span class="tag">Online sponsorship/donation systems</span><span class="tag">Payment ↔ donor-management integration</span></div></div>
-              <div class="project-meta-block"><h5>Impact</h5><p>Built and improved technology supporting nonprofit fundraising.</p></div>
-            </div>
-          </li>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Donors needed to give online by themselves, and the resulting records had to stay in step with Salesforce and the website.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Laravel</li><li class="sv-tag sv-tag--code">Stripe</li><li class="sv-tag sv-tag--code">Salesforce</li><li class="sv-tag sv-tag--code">WordPress</li></ul></dd></div>
+                <div><dt>Impact</dt><dd>Donors can give online by themselves, and records stay connected across payment, donor-management and website systems. Sandbox and staging environments use Stripe test mode, a Salesforce sandbox and redirected email, so testing never reaches real donors.</dd></div>
+              </dl>
+            </li>
 
-          <li class="project-card">
-            <div class="project-card-head">
-              <div class="icon-box"><svg aria-hidden="true"><use href="#icon-server"/></svg></div>
-              <div>
-                <h3 class="h4 project-title">Information Systems &amp; Salesforce</h3>
-                <p class="project-role">Technology Lead</p>
-              </div>
-            </div>
-            <p class="project-summary">Core information systems supporting student, programme, sponsorship and organisational data.</p>
-            <div class="project-meta">
-              <div class="project-meta-block"><h5>Problem</h5><p>Student, programme and sponsorship data needed consistent management, automation and reporting.</p></div>
-              <div class="project-meta-block"><h5>Technology</h5><div class="tag-row"><span class="tag">Salesforce</span><span class="tag">Workflow automation</span><span class="tag">Reporting</span></div></div>
-              <div class="project-meta-block"><h5>Impact</h5><p>Stronger data management, workflow automation and reporting supporting decision-making.</p></div>
-            </div>
-          </li>
+            <li class="sv-card project">
+              <p class="sv-card__meta">Independent product · Version 0.1.0, pre-pilot</p>
+              <h4 class="sv-card__title">Approval Portal</h4>
+              <p class="sv-card__text">A payment request and approval application for Google Workspace, built on Google Apps Script. It replaces form-based approval workflows with a role-based dashboard, a durable processing queue and an audit trail.</p>
 
-          <li class="project-card">
-            <div class="project-card-head">
-              <div class="icon-box"><svg aria-hidden="true"><use href="#icon-trending-up"/></svg></div>
-              <div>
-                <h3 class="h4 project-title">Digital Growth &amp; Online Visibility</h3>
-                <p class="project-role">Technology Lead</p>
-              </div>
-            </div>
-            <p class="project-summary">Organic SEO, Google Ads and social media work to grow organisational visibility.</p>
-            <div class="project-meta">
-              <div class="project-meta-block"><h5>Problem</h5><p>Limited online visibility and audience reach for the organisation's programmes.</p></div>
-              <div class="project-meta-block"><h5>Technology</h5><div class="tag-row"><span class="tag">Organic SEO</span><span class="tag">Google Ads</span><span class="tag">Social media</span></div></div>
-              <div class="project-meta-block"><h5>Impact</h5><p>Significantly grew the organisation's digital presence and audience engagement.</p></div>
-            </div>
-          </li>
+              <ul class="shots">
+                <li>
+                  <figure>
+                    <a class="sv-media sv-media--16x10" href="assets/images/projects/approval-portal-review.webp" target="_blank" rel="noopener">
+                      <img src="assets/images/projects/approval-portal-review.webp" alt="Request review screen with a budget check, request details, documents and an approve, reject or send-back decision." width="1440" height="900" loading="lazy" />
+                      <span class="visually-hidden">(opens full size in a new tab)</span>
+                    </a>
+                    <figcaption class="sv-caption">Review: budget check, documents and the decision form.</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <a class="sv-media sv-media--16x10" href="assets/images/projects/approval-portal-overview.webp" target="_blank" rel="noopener">
+                      <img src="assets/images/projects/approval-portal-overview.webp" alt="Approval Portal overview for an approver, showing request counts, totals and requests waiting for a decision." width="1440" height="900" loading="lazy" />
+                      <span class="visually-hidden">(opens full size in a new tab)</span>
+                    </a>
+                    <figcaption class="sv-caption">Overview: counts, totals and requests waiting for a decision.</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <a class="sv-media sv-media--16x10" href="assets/images/projects/approval-portal-reports.webp" target="_blank" rel="noopener">
+                      <img src="assets/images/projects/approval-portal-reports.webp" alt="Management report with request counts, totals and breakdowns by department and status." width="1440" height="900" loading="lazy" />
+                      <span class="visually-hidden">(opens full size in a new tab)</span>
+                    </a>
+                    <figcaption class="sv-caption">Reports: totals and breakdowns for management.</figcaption>
+                  </figure>
+                </li>
+              </ul>
+              <p class="sv-caption shots__note">Screens come from a local preview that uses fictitious data only.</p>
 
-          <li class="project-card">
-            <div class="project-card-head">
-              <div class="icon-box"><svg aria-hidden="true"><use href="#icon-zap"/></svg></div>
-              <div>
-                <h3 class="h4 project-title">STEM &amp; Technology Education Programming</h3>
-                <p class="project-role">Programme Technology Lead</p>
-              </div>
-            </div>
-            <p class="project-summary">Technology-based learning experiences for children spanning robotics, space exploration and virtual reality.</p>
-            <div class="project-meta">
-              <div class="project-meta-block"><h5>Problem</h5><p>Children needed greater access to hands-on technology and STEM learning.</p></div>
-              <div class="project-meta-block"><h5>Technology</h5><div class="tag-row"><span class="tag">Robotics</span><span class="tag">Space exploration tech</span><span class="tag">Virtual reality</span></div></div>
-              <div class="project-meta-block"><h5>Impact</h5><p>Strengthened technology education for children.</p></div>
-            </div>
-          </li>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Payment approvals needed clear roles, a reliable processing queue and a trustworthy audit trail.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Google Apps Script</li><li class="sv-tag sv-tag--code">JavaScript</li><li class="sv-tag">Google Workspace</li><li class="sv-tag">Automated tests</li></ul></dd></div>
+                <div><dt>Design</dt><dd>Six roles (staff, approver, finance, auditor, management and administrator), with server-side permission checks on every read and action, and an audit log protected by a hash chain.</dd></div>
+                <div><dt>Status</dt><dd>Version 0.1.0, pre-pilot. The server code, dashboard and documentation are complete, and automated tests pass against simulated Google services. Testing on a live Workspace installation is the next step.</dd></div>
+              </dl>
+            </li>
 
-          <li class="project-card">
-            <div class="project-card-head">
-              <div class="icon-box"><svg aria-hidden="true"><use href="#icon-code"/></svg></div>
-              <div>
-                <h3 class="h4 project-title">Freelance Web-Based Solutions</h3>
-                <p class="project-role">Freelance Software Engineer</p>
-              </div>
-            </div>
-            <p class="project-summary">Independent design and development of web-based solutions for a range of operational needs.</p>
-            <div class="project-meta">
-              <div class="project-meta-block"><h5>Problem</h5><p>Clients needed operational needs and ideas translated into practical digital products.</p></div>
-              <div class="project-meta-block"><h5>Technology</h5><div class="tag-row"><span class="tag">PHP / Laravel</span><span class="tag">JavaScript</span><span class="tag">WordPress</span><span class="tag">MySQL</span></div></div>
-              <div class="project-meta-block"><h5>Impact</h5><p>Practical, working digital products delivered for clients.</p></div>
-            </div>
-          </li>
+          </ul>
+        </section>
 
-        </ul>
+        <section class="section" aria-labelledby="more-title">
+          <div class="section__head">
+            <h3 class="section__title" id="more-title">More projects</h3>
+          </div>
+
+          <ul class="card-grid">
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
+              <h4 class="sv-card__title">Information systems and Salesforce</h4>
+              <p class="sv-card__text">Core information systems supporting student, programme, sponsorship and organisational data, delivered as a version-controlled Salesforce project.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Student, programme and sponsorship data needed consistent management, automation and reporting.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Salesforce</li><li class="sv-tag sv-tag--code">Salesforce DX</li><li class="sv-tag sv-tag--code">GitHub Actions</li><li class="sv-tag">Workflow automation</li><li class="sv-tag">Reporting</li></ul></dd></div>
+                <div><dt>Delivery</dt><dd>Changes go through pull requests, are validated against Salesforce before merging, and deploy to a sandbox automatically.</dd></div>
+                <div><dt>Recent work</dt><dd>Sponsor bulk email and unsubscribe handling, donor and sponsor field visibility, student grade fields, and correspondence history.</dd></div>
+                <div><dt>Impact</dt><dd>Stronger data management, workflow automation and reporting to support decision-making.</dd></div>
+              </dl>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
+              <h4 class="sv-card__title">Website and release process</h4>
+              <p class="sv-card__text">The NRCF WordPress website runs through three environments (sandbox, staging and production) with a documented hand-off between NRCF's developers and an external development partner.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Two teams needed to change one website without overwriting each other's work.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">WordPress</li><li class="sv-tag sv-tag--code">Git</li><li class="sv-tag sv-tag--code">GitLab CI</li><li class="sv-tag sv-tag--code">GitHub</li></ul></dd></div>
+                <div><dt>Impact</dt><dd>Each branch has one owner and pull requests are the hand-off, so every change is reviewed before it reaches the live site.</dd></div>
+              </dl>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
+              <h4 class="sv-card__title">Digital growth and online visibility</h4>
+              <p class="sv-card__text">Organic SEO, Google Ads and social media work to grow organisational visibility.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>The organisation's programmes needed greater online visibility and audience reach.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag">Organic SEO</li><li class="sv-tag">Google Ads</li><li class="sv-tag">Social media</li></ul></dd></div>
+                <div><dt>Impact</dt><dd>Significantly grew the organisation's digital presence and engagement.</dd></div>
+              </dl>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">IT &amp; Systems Manager, NRCF</p>
+              <h4 class="sv-card__title">STEM and technology education programming</h4>
+              <p class="sv-card__text">Technology-based learning for children spanning robotics, space exploration and virtual reality.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Children needed greater access to hands-on technology and STEM learning.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag">Robotics</li><li class="sv-tag">Space exploration through technology</li><li class="sv-tag">Virtual reality</li></ul></dd></div>
+                <div><dt>Impact</dt><dd>Strengthened technology education for children.</dd></div>
+              </dl>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Freelance Software Engineer</p>
+              <h4 class="sv-card__title">Web-based solutions</h4>
+              <p class="sv-card__text">Independent design and development of web-based solutions for a range of operational needs, including a WordPress website for a school, delivered with a handover guide and documentation.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Operational needs and ideas had to be translated into practical digital products.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">PHP</li><li class="sv-tag sv-tag--code">Laravel</li><li class="sv-tag sv-tag--code">JavaScript</li><li class="sv-tag sv-tag--code">WordPress</li><li class="sv-tag sv-tag--code">MySQL</li></ul></dd></div>
+                <div><dt>Impact</dt><dd>Practical, working digital products delivered for clients.</dd></div>
+              </dl>
+            </li>
+
+          </ul>
+        </section>
       </article>
 
 
       <!-- SKILLS -->
-      <article class="skills" data-page="skills" id="page-skills" role="tabpanel" aria-labelledby="tab-skills" tabindex="0">
-        <header>
-          <h2 class="h2 article-title">Skills</h2>
-          <p class="section-lede">A blend of technology leadership, education-focused impact and hands-on technical skill.</p>
+      <article class="page" data-page="skills" aria-labelledby="title-skills">
+        <header class="page-header">
+          <h2 class="page-title" id="title-skills" tabindex="-1">Skills</h2>
+          <p class="lead">Technology leadership, education-focused impact and hands-on technical skill.</p>
         </header>
 
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-card-head"><div class="icon-box"><svg width="20" height="20" aria-hidden="true"><use href="#icon-cpu"/></svg></div><h4 class="h4">Technology Leadership</h4></div>
-            <div class="skill-tag-list">
-              <span class="tag">Technology Strategy</span><span class="tag">Digital Transformation</span><span class="tag">IT Operations</span><span class="tag">Systems Management</span><span class="tag">Cybersecurity Awareness</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-head"><div class="icon-box"><svg width="20" height="20" aria-hidden="true"><use href="#icon-graduation-cap"/></svg></div><h4 class="h4">Education &amp; Impact</h4></div>
-            <div class="skill-tag-list">
-              <span class="tag">STEM Education</span><span class="tag">Technology Education</span><span class="tag">Youth-Focused Technology</span><span class="tag">Nonprofit Technology</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-head"><div class="icon-box"><svg width="20" height="20" aria-hidden="true"><use href="#icon-server"/></svg></div><h4 class="h4">Data &amp; Platforms</h4></div>
-            <div class="skill-tag-list">
-              <span class="tag">Salesforce</span><span class="tag">Information Systems</span><span class="tag">Reporting</span><span class="tag">Workflow Automation</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-head"><div class="icon-box"><svg width="20" height="20" aria-hidden="true"><use href="#icon-trending-up"/></svg></div><h4 class="h4">Digital</h4></div>
-            <div class="skill-tag-list">
-              <span class="tag">SEO</span><span class="tag">Google Ads</span><span class="tag">Social Media</span><span class="tag">Digital Communications</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-head"><div class="icon-box"><svg width="20" height="20" aria-hidden="true"><use href="#icon-code"/></svg></div><h4 class="h4">Development</h4></div>
-            <div class="skill-tag-list">
-              <span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">JavaScript</span><span class="tag">WordPress</span><span class="tag">MySQL</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-head"><div class="icon-box"><svg width="20" height="20" aria-hidden="true"><use href="#icon-users"/></svg></div><h4 class="h4">Project &amp; Stakeholder Management</h4></div>
-            <div class="skill-tag-list">
-              <span class="tag">Project Delivery</span><span class="tag">Stakeholder Collaboration</span><span class="tag">Vendor Management</span><span class="tag">Cross-Functional Coordination</span>
-            </div>
-          </div>
-        </div>
+        <ul class="card-grid">
+          <li class="sv-card skill-card">
+            <h3 class="sv-card__title">Technology leadership</h3>
+            <ul class="tag-list">
+              <li class="sv-tag">Technology strategy</li><li class="sv-tag">Digital transformation</li><li class="sv-tag">IT operations</li><li class="sv-tag">Systems management</li><li class="sv-tag">Cybersecurity</li><li class="sv-tag">Release management</li>
+            </ul>
+          </li>
+          <li class="sv-card skill-card">
+            <h3 class="sv-card__title">Education and impact</h3>
+            <ul class="tag-list">
+              <li class="sv-tag">STEM education</li><li class="sv-tag">Technology education</li><li class="sv-tag">Youth-focused technology</li><li class="sv-tag">Nonprofit technology</li>
+            </ul>
+          </li>
+          <li class="sv-card skill-card">
+            <h3 class="sv-card__title">Data and platforms</h3>
+            <ul class="tag-list">
+              <li class="sv-tag">Salesforce</li><li class="sv-tag sv-tag--code">Salesforce DX</li><li class="sv-tag">Information systems</li><li class="sv-tag">Reporting</li><li class="sv-tag">Workflow automation</li><li class="sv-tag">Stripe integration</li>
+            </ul>
+          </li>
+          <li class="sv-card skill-card">
+            <h3 class="sv-card__title">Digital</h3>
+            <ul class="tag-list">
+              <li class="sv-tag">SEO</li><li class="sv-tag">Google Ads</li><li class="sv-tag">Social media</li><li class="sv-tag">Digital communications</li>
+            </ul>
+          </li>
+          <li class="sv-card skill-card">
+            <h3 class="sv-card__title">Development</h3>
+            <ul class="tag-list">
+              <li class="sv-tag sv-tag--code">PHP</li><li class="sv-tag sv-tag--code">Laravel</li><li class="sv-tag sv-tag--code">JavaScript</li><li class="sv-tag sv-tag--code">WordPress</li><li class="sv-tag sv-tag--code">MySQL</li><li class="sv-tag sv-tag--code">Google Apps Script</li><li class="sv-tag sv-tag--code">Git and CI</li>
+            </ul>
+          </li>
+          <li class="sv-card skill-card">
+            <h3 class="sv-card__title">Product and design</h3>
+            <ul class="tag-list">
+              <li class="sv-tag">Design systems</li><li class="sv-tag">UX documentation</li><li class="sv-tag">Accessibility</li><li class="sv-tag">Responsive design</li>
+            </ul>
+          </li>
+          <li class="sv-card skill-card">
+            <h3 class="sv-card__title">Project and stakeholder management</h3>
+            <ul class="tag-list">
+              <li class="sv-tag">Project delivery</li><li class="sv-tag">Stakeholder collaboration</li><li class="sv-tag">Vendor management</li><li class="sv-tag">Cross-functional coordination</li>
+            </ul>
+          </li>
+        </ul>
       </article>
 
 
       <!-- CONTACT -->
-      <article class="contact" data-page="contact" id="page-contact" role="tabpanel" aria-labelledby="tab-contact" tabindex="0">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-          <p class="section-lede contact-lede">
-            I'm always glad to connect with education organisations, nonprofits and technology partners.
-            Reach out directly, or send a message below.
+      <article class="page" data-page="contact" aria-labelledby="title-contact">
+        <header class="page-header">
+          <h2 class="page-title" id="title-contact" tabindex="-1">Contact</h2>
+          <p class="lead">
+            I am glad to hear from education organisations, nonprofits and technology partners. Write
+            to me directly, or use the form below.
           </p>
         </header>
 
-        <div class="contact-info-grid">
-          <a class="contact-info-card" href="mailto:victorwambua004@gmail.com">
-            <div class="icon-box"><svg width="20" height="20" aria-hidden="true"><use href="#icon-mail"/></svg></div>
-            <div class="contact-info"><p class="contact-title">Email</p><span class="contact-link">victorwambua004@gmail.com</span></div>
-          </a>
+        <section class="section" aria-labelledby="direct-title">
+          <div class="section__head">
+            <h3 class="section__title" id="direct-title">Direct</h3>
+          </div>
+          <dl class="direct-list">
+            <div><dt>Email</dt><dd><a class="sv-link" href="mailto:victorwambua004@gmail.com">victorwambua004@gmail.com</a></dd></div>
+            <div><dt>Location</dt><dd>Nairobi, Kenya</dd></div>
+            <div><dt>LinkedIn</dt><dd><a class="sv-link" href="https://www.linkedin.com/in/victor-wambua" target="_blank" rel="noopener">linkedin.com/in/victor-wambua<span class="visually-hidden"> (opens in a new tab)</span></a></dd></div>
+            <div><dt>GitHub</dt><dd><a class="sv-link" href="https://github.com/Victor-Wambua" target="_blank" rel="noopener">github.com/Victor-Wambua<span class="visually-hidden"> (opens in a new tab)</span></a></dd></div>
+          </dl>
+        </section>
 
-          <div class="contact-info-card">
-            <div class="icon-box"><svg width="20" height="20" aria-hidden="true"><use href="#icon-map-pin"/></svg></div>
-            <div class="contact-info"><p class="contact-title">Location</p><address>Nairobi, Kenya</address></div>
+        <section class="section" aria-labelledby="form-title">
+          <div class="section__head">
+            <h3 class="section__title" id="form-title">Send a message</h3>
           </div>
 
-          <a class="contact-info-card" href="https://www.linkedin.com/in/victor-wambua" target="_blank" rel="noopener">
-            <div class="icon-box" style="background:var(--navy-900);"><img src="assets/linkedin-icon.svg" alt="" width="18" height="18" /></div>
-            <div class="contact-info"><p class="contact-title">LinkedIn</p><span class="contact-link">linkedin.com/in/victor-wambua</span></div>
-          </a>
-
-          <a class="contact-info-card" href="https://github.com/Victor-Wambua" target="_blank" rel="noopener">
-            <div class="icon-box" style="background:var(--navy-900);"><img src="assets/github-icon.svg" alt="" width="18" height="18" /></div>
-            <div class="contact-info"><p class="contact-title">GitHub</p><span class="contact-link">github.com/Victor-Wambua</span></div>
-          </a>
-        </div>
-
-        <section class="contact-form">
-          <h3 class="h3 form-title">Send a Message</h3>
-          <p class="form-note">This opens your email app with the message pre-filled — nothing is sent from this page directly.</p>
-
           <form class="form" data-form novalidate>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input />
+            <p class="form__note">This opens your email app with the message pre-filled. Nothing is sent from this page, and nothing is stored.</p>
+
+            <div class="form__summary" data-form-summary tabindex="-1" hidden></div>
+            <div class="form__success" data-form-status role="status"></div>
+
+            <div class="form__fields">
+              <div class="field">
+                <label for="field-name">Full name</label>
+                <input class="control" id="field-name" name="fullname" type="text" autocomplete="name" required aria-describedby="field-name-error" />
+                <p class="field__error" id="field-name-error"><svg class="icon" aria-hidden="true"><use href="#icon-alert"/></svg><span></span></p>
+              </div>
+
+              <div class="field">
+                <label for="field-email">Email address</label>
+                <input class="control" id="field-email" name="email" type="email" autocomplete="email" required aria-describedby="field-email-error" />
+                <p class="field__error" id="field-email-error"><svg class="icon" aria-hidden="true"><use href="#icon-alert"/></svg><span></span></p>
+              </div>
+
+              <div class="field">
+                <label for="field-message">Message</label>
+                <p class="field__hint" id="field-message-hint">Write at least 20 characters so the message has enough context.</p>
+                <textarea class="control" id="field-message" name="message" required aria-describedby="field-message-hint field-message-error"></textarea>
+                <p class="field__error" id="field-message-error"><svg class="icon" aria-hidden="true"><use href="#icon-alert"/></svg><span></span></p>
+              </div>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <svg width="16" height="16" aria-hidden="true"><use href="#icon-send"/></svg>
-              <span>Send Message</span>
-            </button>
-
-            <div class="form-success" data-form-success>
-              <svg width="16" height="16" aria-hidden="true"><use href="#icon-check"/></svg>
-              <span>Opening your email app…</span>
-            </div>
+            <button class="sv-btn form__submit" type="submit">Send message</button>
           </form>
         </section>
       </article>
 
-      <footer class="site-footer">
-        <p>© <span data-current-year>2026</span> Victor Wambua. Built with care in Nairobi, Kenya.</p>
-      </footer>
+    </main>
+  </div>
 
+
+  <!-- FOOTER -->
+  <footer class="site-footer on-dark">
+    <div class="site-footer__inner">
+      <div class="footer-top">
+        <div class="footer-identity">
+          <img src="assets/images/logos/sir-victor-primary-reversed.svg" alt="Sir Victor" width="121" height="36" loading="lazy" />
+          <p>Victor Wambua is a technology, education and digital transformation leader based in Nairobi, Kenya.</p>
+        </div>
+
+        <div class="footer-cols">
+          <nav class="footer-col" aria-label="Sections">
+            <p class="footer-col__label">Sections</p>
+            <ul>
+              <li><a href="#about" data-route="about">About</a></li>
+              <li><a href="#experience" data-route="experience">Experience</a></li>
+              <li><a href="#impact" data-route="impact">Impact</a></li>
+              <li><a href="#projects" data-route="projects">Projects</a></li>
+              <li><a href="#skills" data-route="skills">Skills</a></li>
+              <li><a href="#contact" data-route="contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-col">
+            <p class="footer-col__label">Connect</p>
+            <ul>
+              <li><a href="mailto:victorwambua004@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/victor-wambua" target="_blank" rel="noopener">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+              <li><a href="https://github.com/Victor-Wambua" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+              <li><a href="assets/cv/Victor-Wambua-CV.pdf" download>Download CV</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-legal">
+        <span>&copy; <span data-current-year>2026</span> Victor Wambua. The Sir Victor identity and brand assets are reserved.</span>
+        <span>Nairobi, Kenya</span>
+      </p>
     </div>
-
-  </main>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
