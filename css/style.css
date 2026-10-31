@@ -598,7 +598,7 @@ button { cursor: pointer; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 30% 15%;
+  object-position: center;
 }
 
 .profile__name { font-size: var(--text-h3); line-height: 1.15; }
