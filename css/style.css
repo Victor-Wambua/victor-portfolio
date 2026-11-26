@@ -938,6 +938,16 @@ button { cursor: pointer; }
 
 .project__facts .tag-list { margin-top: var(--space-2); }
 
+/* links row at the foot of a project card */
+.project__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+}
+
 .stack { display: grid; gap: var(--gutter); }
 
 /* an odd final card spans the row instead of leaving a gap */
