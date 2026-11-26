@@ -708,6 +708,291 @@
 
           </ul>
         </section>
+
+        <section class="section" aria-labelledby="oss-title">
+          <div class="section__head">
+            <p class="eyebrow">Open source</p>
+            <h3 class="section__title" id="oss-title">Public builds on GitHub</h3>
+            <p class="section__intro">
+              Twenty working builds with tests, screenshots and a written case study. Most of my
+              day-to-day code is private, so these are built in the open. They use made-up data and
+              simulated payments, and each README says what has not been verified.
+            </p>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="money-title">
+          <div class="section__head">
+            <h3 class="section__title" id="money-title">Money and payments</h3>
+            <p class="section__intro">Payment and bookkeeping systems built around how people in Kenya actually pay and save: M-Pesa prompts, chamas and small shops.</p>
+          </div>
+
+          <ul class="card-grid">
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">daraja-php</h4>
+              <p class="sv-card__text">A strictly typed PHP client for Safaricom&#x27;s M-Pesa Daraja API, with a mock Daraja server so payment flows can be built and tested without sandbox credentials.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Every PHP team rewrites the same fragile payment code: tokens fetched on every call, unchecked callbacks, and payments credited twice when a callback is retried.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">PHP</li><li class="sv-tag sv-tag--code">PHPUnit</li><li class="sv-tag sv-tag--code">PHPStan</li><li class="sv-tag sv-tag--code">M-Pesa</li></ul></dd></div>
+                <div><dt>Status</dt><dd>279 automated tests pass, including a full STK Push flow against the mock server. Not yet run against live Daraja.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/daraja-php" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/daraja-php/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">Chama Ledger</h4>
+              <p class="sv-card__text">Books for chamas (Kenyan savings groups): a double-entry ledger, loans with flat and reducing-balance schedules, merry-go-round rotation and M-Pesa statement import.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Chama books live in a WhatsApp group and one treasurer&#x27;s spreadsheet, so contributions get disputed and the history leaves with the treasurer.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Laravel</li><li class="sv-tag sv-tag--code">PHP</li><li class="sv-tag sv-tag--code">SQLite</li><li class="sv-tag sv-tag--code">Pest</li></ul></dd></div>
+                <div><dt>Status</dt><dd>173 tests pass. The ledger cannot be edited after posting and always balances, enforced by database triggers. Demo data only, with no live M-Pesa connection.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/chama-ledger" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/chama-ledger/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally, sample online</p>
+              <h4 class="sv-card__title">mpesa-ledger</h4>
+              <p class="sv-card__text">A private, local-first tool that turns M-Pesa SMS receipts into a ledger, with categories, budgets, missing-message detection, invoice reconciliation and an HTML report.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>M-Pesa is most people&#x27;s bank, but the only record is hundreds of text messages.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Python</li><li class="sv-tag sv-tag--code">SQLite</li><li class="sv-tag sv-tag--code">hledger export</li></ul></dd></div>
+                <div><dt>Status</dt><dd>235 tests pass. Message formats are modelled on public examples, not checked against real messages. Nothing leaves the machine.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://victor-wambua.github.io/mpesa-ledger/" target="_blank" rel="noopener">Sample report<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/mpesa-ledger" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/mpesa-ledger/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Live demo online</p>
+              <h4 class="sv-card__title">Duka Storefront</h4>
+              <p class="sv-card__text">A mobile-first shop front-end whose M-Pesa STK push checkout is a tested state machine. Cancelled, wrong PIN, timeout and retry are all handled without double orders.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Shop templates assume cards, but customers pay with an M-Pesa prompt that is asynchronous and can fail in several ways.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">React</li><li class="sv-tag sv-tag--code">TypeScript</li><li class="sv-tag sv-tag--code">Vite</li><li class="sv-tag sv-tag--code">PWA</li></ul></dd></div>
+                <div><dt>Status</dt><dd>204 unit tests and 8 end-to-end tests pass. Payments are simulated.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://victor-wambua.github.io/duka-storefront/" target="_blank" rel="noopener">Live demo<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/duka-storefront" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/duka-storefront/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">Duka Admin</h4>
+              <p class="sv-card__text">A back-office for a small shop: orders, an append-only stock ledger, M-Pesa payment matching and an end-of-day close, with roles enforced on the server.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Shop owners juggle WhatsApp orders, M-Pesa messages and a notebook, so stock is wrong and payments do not match orders.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">TypeScript</li><li class="sv-tag sv-tag--code">Hono</li><li class="sv-tag sv-tag--code">React</li><li class="sv-tag sv-tag--code">SQLite</li></ul></dd></div>
+                <div><dt>Status</dt><dd>197 automated tests pass. Demo data only, with no live payments integration.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/duka-admin" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/duka-admin/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">Tiketi</h4>
+              <p class="sv-card__text">Seat booking and ticketing that cannot double-book a seat, with signed QR tickets and a gate scanner that verifies offline.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Event and coach bookings run on WhatsApp and phone calls, so seats are promised twice and tickets are screenshots that can be copied.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">TypeScript</li><li class="sv-tag sv-tag--code">Hono</li><li class="sv-tag sv-tag--code">SQLite</li><li class="sv-tag sv-tag--code">Ed25519</li></ul></dd></div>
+                <div><dt>Status</dt><dd>90 tests pass, including 200 simultaneous holds on one seat that produce exactly one winner. Payments are mocked.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/tiketi" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/tiketi/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="community-title">
+          <div class="section__head">
+            <h3 class="section__title" id="community-title">Community and public services</h3>
+            <p class="section__intro">Tools for clinics, schools, libraries, shops and the people who find work through word of mouth.</p>
+          </div>
+
+          <ul class="card-grid">
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">ClinicQueue</h4>
+              <p class="sv-card__text">Queue and appointment management for small clinics, with priority-aware tickets, a waiting-room board that shows ticket numbers only, and wait estimates from recent service times.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Patients wait for hours without knowing when they will be seen, and urgent cases get missed in a paper notebook.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Django</li><li class="sv-tag sv-tag--code">HTMX</li><li class="sv-tag sv-tag--code">Python</li><li class="sv-tag sv-tag--code">SQLite</li></ul></dd></div>
+                <div><dt>Status</dt><dd>254 tests pass with 95% coverage. Wait estimates are validated on simulated data only, and the SMS adapter has not been run live.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/clinic-queue" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/clinic-queue/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">Maktaba</h4>
+              <p class="sv-card__text">A lightweight library system for schools and community libraries, with a scanner-first circulation desk and fines that follow the school calendar.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Loans are recorded in a paper register, so books go missing and nobody can say what is overdue.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">TypeScript</li><li class="sv-tag sv-tag--code">Fastify</li><li class="sv-tag sv-tag--code">SQLite</li><li class="sv-tag sv-tag--code">htmx</li></ul></dd></div>
+                <div><dt>Status</dt><dd>252 tests pass. Tested with simulated scanner input, not a physical scanner.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/maktaba" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/maktaba/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally, sample online</p>
+              <h4 class="sv-card__title">Shule Timetable</h4>
+              <p class="sv-card__text">Builds a clash-free school timetable with a constraint solver, explains why an impossible request is impossible, and changes as few lessons as possible when a teacher leaves.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Deputy heads spend days building timetables by hand, and every change means starting again.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Python</li><li class="sv-tag sv-tag--code">OR-Tools</li><li class="sv-tag sv-tag--code">YAML</li></ul></dd></div>
+                <div><dt>Status</dt><dd>144 tests pass, and an independent validator re-checks every result. Sample schools are synthetic and it has not been field-tested.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://victor-wambua.github.io/shule-timetable/" target="_blank" rel="noopener">Sample timetables<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/shule-timetable" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/shule-timetable/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">Fundi Finder</h4>
+              <p class="sv-card__text">A marketplace to find and book local artisans, where a review needs a completion code from a real job and the ranking resists fake reviews.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Customers cannot tell good artisans from bad ones, and one five-star review can outrank a fundi with eighty honest jobs.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Flask</li><li class="sv-tag sv-tag--code">Python</li><li class="sv-tag sv-tag--code">SQLAlchemy</li><li class="sv-tag sv-tag--code">SQLite</li></ul></dd></div>
+                <div><dt>Status</dt><dd>313 tests pass with 88% coverage. No payments, synthetic data, and not field-tested.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/fundi-finder" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/fundi-finder/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">Mama Mboga</h4>
+              <p class="sv-card__text">Daily-price ordering for neighbourhood greengrocers, with a parser that turns pasted WhatsApp orders into draft orders, a market shopping list and a credit ledger.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Orders arrive as WhatsApp messages, the shopping list is re-typed for the market, and who owes what lives in a notebook.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">PHP 8</li><li class="sv-tag sv-tag--code">SQLite</li><li class="sv-tag sv-tag--code">PHPUnit</li><li class="sv-tag sv-tag--code">PWA</li></ul></dd></div>
+                <div><dt>Status</dt><dd>441 tests pass. Built without a framework. WhatsApp is a link, not an API, and payments are recorded by hand.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/mama-mboga" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/mama-mboga/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">Jibu</h4>
+              <p class="sv-card__text">A bilingual English and Swahili FAQ engine that answers only from an approved knowledge base and hands over to staff when it is not sure.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Small organisations answer the same forty questions on WhatsApp all day.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Python</li><li class="sv-tag sv-tag--code">FastAPI</li><li class="sv-tag sv-tag--code">BM25</li><li class="sv-tag sv-tag--code">WhatsApp</li></ul></dd></div>
+                <div><dt>Status</dt><dd>184 tests pass. On a 226-question test set it answers 70.5% of in-scope questions correctly and 6.3% wrongly, and hands the rest to staff. The WhatsApp adapter has not been run live.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/jibu" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/jibu/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">Kikao</h4>
+              <p class="sv-card__text">A realtime team chat for unreliable connections: offline-first, exactly-once delivery, with a built-in bad-network simulator.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Chat apps assume stable broadband. On patchy mobile networks, messages vanish, duplicate or arrive out of order.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">TypeScript</li><li class="sv-tag sv-tag--code">WebSocket</li><li class="sv-tag sv-tag--code">Preact</li><li class="sv-tag sv-tag--code">SQLite</li></ul></dd></div>
+                <div><dt>Status</dt><dd>161 tests pass, including real WebSocket clients that drop and reconnect. Minimal sign-in, no encryption, text only.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/kikao" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/kikao/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Live demo online</p>
+              <h4 class="sv-card__title">Stockroom</h4>
+              <p class="sv-card__text">An offline stock-taking app for shops and warehouses: scan, count, merge counts from several phones without a server, and see where the numbers differ.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Stock-takes use clipboards and retyped spreadsheets, and two people counting one shelf means double counts.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">TypeScript</li><li class="sv-tag sv-tag--code">Preact</li><li class="sv-tag sv-tag--code">IndexedDB</li><li class="sv-tag sv-tag--code">PWA</li></ul></dd></div>
+                <div><dt>Status</dt><dd>152 tests pass, with the merge rules property-tested. Tested with simulated scanner input and rendered barcodes, not a physical phone camera.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://victor-wambua.github.io/stockroom/" target="_blank" rel="noopener">Live demo<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/stockroom" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/stockroom/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="tools-title">
+          <div class="section__head">
+            <h3 class="section__title" id="tools-title">Engineering tools and data</h3>
+            <p class="section__intro">Developer tools, learning tools and analysis, built to be useful on their own and to show how I work.</p>
+          </div>
+
+          <ul class="card-grid">
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally</p>
+              <h4 class="sv-card__title">Authkit</h4>
+              <p class="sv-card__text">A small self-hostable authentication service: Argon2id hashing, rotating refresh tokens that detect reuse, TOTP two-factor and an audit log.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Small teams hand-roll login with weak hashing and tokens that cannot be revoked.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Python</li><li class="sv-tag sv-tag--code">FastAPI</li><li class="sv-tag sv-tag--code">SQLAlchemy</li><li class="sv-tag sv-tag--code">Argon2</li></ul></dd></div>
+                <div><dt>Status</dt><dd>264 tests pass with 96% coverage, and there is a written threat model. Single node, and the demo screens are checked by hand.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/authkit" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/authkit/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Live demo online</p>
+              <h4 class="sv-card__title">Algorithm Atlas</h4>
+              <p class="sv-card__text">An interactive atlas that steps through 14 algorithms, from sorting to A* pathfinding, with pseudo-code, counters and a race mode. It works offline.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Algorithms are usually taught from static slides, so students never see the state change.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">TypeScript</li><li class="sv-tag sv-tag--code">Vite</li><li class="sv-tag sv-tag--code">Canvas</li></ul></dd></div>
+                <div><dt>Status</dt><dd>143 tests pass and the accessibility audits are clean. Tested in Chromium only so far.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://victor-wambua.github.io/algorithm-atlas/" target="_blank" rel="noopener">Live demo<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/algorithm-atlas" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/algorithm-atlas/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Live demo online</p>
+              <h4 class="sv-card__title">Msingi UI</h4>
+              <p class="sv-card__text">A library of 15 accessible web components with design tokens, live docs and no runtime dependencies.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Accessible components are hard to build, and heavy frameworks cost data on slow mobile connections.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">TypeScript</li><li class="sv-tag sv-tag--code">Web Components</li><li class="sv-tag sv-tag--code">WCAG</li><li class="sv-tag sv-tag--code">axe-core</li></ul></dd></div>
+                <div><dt>Status</dt><dd>328 tests pass with no accessibility violations in any theme. Tested in Chromium, not yet with screen readers.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://victor-wambua.github.io/msingi-ui/" target="_blank" rel="noopener">Live docs<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/msingi-ui" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/msingi-ui/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Live demo online</p>
+              <h4 class="sv-card__title">Dockerfile Doctor</h4>
+              <p class="sv-card__text">A linter and fixer for Dockerfiles and compose files, with 62 rules, SARIF output, a GitHub Action and a browser playground.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Small teams ship containers that run as root, use latest tags or bake in secrets, because nobody reviews Dockerfiles.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">TypeScript</li><li class="sv-tag sv-tag--code">Docker</li><li class="sv-tag sv-tag--code">SARIF</li><li class="sv-tag sv-tag--code">GitHub Actions</li></ul></dd></div>
+                <div><dt>Status</dt><dd>576 tests pass and CI builds the example images. It reads files only, with no image scanning.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://victor-wambua.github.io/dockerfile-doctor/" target="_blank" rel="noopener">Live playground<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/dockerfile-doctor" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/dockerfile-doctor/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally, sample online</p>
+              <h4 class="sv-card__title">devbox-bootstrap</h4>
+              <p class="sv-card__text">An idempotent macOS developer-machine setup with plan, apply and doctor commands and profiles for Laravel Valet, Python, Node and Salesforce.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>A new laptop takes a day to set up, and no two teammates end up the same.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Bash</li><li class="sv-tag sv-tag--code">Homebrew</li><li class="sv-tag sv-tag--code">bats</li><li class="sv-tag sv-tag--code">Laravel Valet</li></ul></dd></div>
+                <div><dt>Status</dt><dd>264 tests pass against a mocked machine. Not yet run end to end on a clean Mac.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://victor-wambua.github.io/devbox-bootstrap/" target="_blank" rel="noopener">Docs site<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/devbox-bootstrap" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/devbox-bootstrap/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+            <li class="sv-card project">
+              <p class="sv-card__meta">Open source · Runs locally, sample online</p>
+              <h4 class="sv-card__title">Donor Retention Lab</h4>
+              <p class="sv-card__text">Finds which donors are likely to stop giving and who to call first, using cohorts, RFM segments and a lapse model, with an executive briefing report.</p>
+              <dl class="project__facts">
+                <div><dt>Problem</dt><dd>Charities lose many donors year to year and have little time to dig through CRM exports.</dd></div>
+                <div><dt>Technology</dt><dd><ul class="tag-list"><li class="sv-tag sv-tag--code">Python</li><li class="sv-tag sv-tag--code">pandas</li><li class="sv-tag sv-tag--code">scikit-learn</li><li class="sv-tag sv-tag--code">Salesforce NPSP</li></ul></dd></div>
+                <div><dt>Status</dt><dd>49 tests pass. All data is synthetic, so the results show the method works, not how it performs on real donors.</dd></div>
+              </dl>
+              <p class="project__links"><a class="sv-link sv-link--arrow" href="https://victor-wambua.github.io/donor-retention-lab/" target="_blank" rel="noopener">Sample report<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/donor-retention-lab" target="_blank" rel="noopener">Source<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a> <a class="sv-link sv-link--arrow" href="https://github.com/Victor-Wambua/donor-retention-lab/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+            </li>
+
+          </ul>
+        </section>
       </article>
 
 
