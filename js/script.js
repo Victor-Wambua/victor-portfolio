@@ -224,6 +224,42 @@ if (form) {
 
 
 
+/* jump links: scroll to a heading on the current page without changing the #route */
+
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+document.addEventListener('click', function (event) {
+  const button = event.target.closest('[data-jump]');
+  if (!button) return;
+  const target = document.getElementById(button.dataset.jump);
+  if (!target) return;
+  target.setAttribute('tabindex', '-1');
+  target.scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'start' });
+  target.focus({ preventScroll: true });
+});
+
+
+
+/* back to top: appears after about a screen and a half of scrolling */
+
+const toTop = document.querySelector('.to-top');
+
+if (toTop) {
+  const updateToTop = function () { toTop.hidden = window.scrollY < window.innerHeight * 1.5; };
+
+  window.addEventListener('scroll', updateToTop, { passive: true });
+
+  toTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+    const title = document.querySelector('.page.is-active .page-title');
+    if (title) title.focus({ preventScroll: true });
+  });
+
+  updateToTop();
+}
+
+
+
 /* footer year */
 
 const yearEl = document.querySelector('[data-current-year]');
